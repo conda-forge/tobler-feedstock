@@ -1,5 +1,5 @@
 {% set name = "tobler" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 59b3aa143965be68d36b53d6fc964a387025ade19c0034490ba48b8684032141
+  sha256: a99d4b47b527872686b851baca31562b898e81f70c5467ffbedcbb1da45185a2
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -29,7 +29,7 @@ requirements:
     - statsmodels
     - scipy
     - libpysal >=4.2.0
-    - quilt3 =3.1.8
+    - quilt3 >=3.1.11
     - tqdm
 
 test:
@@ -41,7 +41,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Tobler is a python package for areal interpolation, dasymetric mapping, and change of support.'
+  summary: Tobler is a python package for areal interpolation, dasymetric mapping, and change of support.
   description: |
     Tobler is a python package for areal interpolation, dasymetric mapping, and change of support.
   doc_url: https://pysal.org/tobler/
