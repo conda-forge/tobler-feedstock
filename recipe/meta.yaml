@@ -1,5 +1,5 @@
 {% set name = "tobler" %}
-{% set version = "0.2.2" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a99d4b47b527872686b851baca31562b898e81f70c5467ffbedcbb1da45185a2
+  sha256: 5ce999674e2e442c2fe4de3e498550d699c608257ede2ac2fd2f8ad37a5d0f50
 
 build:
   noarch: python
