@@ -5,9 +5,13 @@ Home: https://github.com/pysal/tobler
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tobler-feedstock/blob/master/LICENSE.txt)
 
 Summary: Tobler is a python package for areal interpolation, dasymetric mapping, and change of support.
+
+Development: https://github.com/pysal/tobler/
+
+Documentation: https://pysal.org/tobler/
 
 Tobler is a python package for areal interpolation, dasymetric mapping, and change of support.
 
