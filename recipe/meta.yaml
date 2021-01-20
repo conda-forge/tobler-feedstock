@@ -29,6 +29,7 @@ requirements:
     - scipy
     - libpysal >=4.2.0
     - tqdm
+    - pygeos
 
 test:
   imports:
