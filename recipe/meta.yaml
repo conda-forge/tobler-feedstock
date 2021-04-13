@@ -1,5 +1,5 @@
 {% set name = "tobler" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bb5d404648e4b18ac6c652db7c07abab9e8854b26acf619a9998e1e2ae2748c0
+  sha256: 0b2cf2d973d85d09ea36c2729b44320e07a9340154ad72da1066978b40dd3980
 
 build:
   noarch: python
@@ -30,6 +30,7 @@ requirements:
     - libpysal >=4.2.0
     - tqdm
     - pygeos
+    - joblib
 
 test:
   imports:
