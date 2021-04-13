@@ -30,6 +30,7 @@ requirements:
     - libpysal >=4.2.0
     - tqdm
     - pygeos
+    - joblib
 
 test:
   imports:
