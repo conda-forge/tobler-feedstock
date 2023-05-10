@@ -1,5 +1,5 @@
 {% set name = "tobler" %}
-{% set version = "0.9.0" %}
+{% set version = "0.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 904b4b4de8d2ff0dfa5df4b80ad113b93207df952eee4b57a75474a41a583c0f
+  sha256: d70c278a41bb7333ef77d69584c6154a8c21bbee7f31624e9e1e2a40cbb86b7c
 
 build:
   noarch: python
@@ -22,14 +22,13 @@ requirements:
     - python >=3.5
     - pandas
     - numpy >=1.16
-    - geopandas
+    - geopandas >=0.13
     - rasterio
     - rasterstats
     - statsmodels
     - scipy
     - libpysal >=4.2.0
     - tqdm
-    - pygeos
     - joblib
 
 test:
