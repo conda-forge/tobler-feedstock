@@ -22,14 +22,13 @@ requirements:
     - python >=3.5
     - pandas
     - numpy >=1.16
-    - geopandas
+    - geopandas >=0.13
     - rasterio
     - rasterstats
     - statsmodels
     - scipy
     - libpysal >=4.2.0
     - tqdm
-    - pygeos
     - joblib
 
 test:
