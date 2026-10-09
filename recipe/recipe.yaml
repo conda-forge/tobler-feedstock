@@ -42,7 +42,10 @@ tests:
       imports:
         - tobler
       pip_check: false
-      python_version: ${{ python_min }}
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+
 about:
   license: BSD-3-Clause
   license_file: LICENSE
