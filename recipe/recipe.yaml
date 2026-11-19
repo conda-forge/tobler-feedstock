@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: tobler
-  version: "0.14.0"
+  version: "0.14.1"
   python_min: "3.12"
 
 package:
@@ -11,10 +11,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 9d199bee5f14fed64ef392700e15ea72dfb68543f2293b505071ee6d2f62efe9
+  sha256: 4cbb188fccdb291a8df5b47be69b4062713674840139d66e5cb5f8ec3d2b107d
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
 
